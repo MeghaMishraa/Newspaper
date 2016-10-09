@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_cell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minWidth="5dp"
+        app:cardBackgroundColor="#594691"
+        app:cardCornerRadius="10dp">
+
+
+        <com.ramotion.foldingcell.FoldingCell xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/folding_cell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/cell_content_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@android:color/holo_green_dark"
+                android:orientation="vertical"
+                android:paddingBottom="2dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="0dp"
+                android:paddingTop="2dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/url_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_gravity="top|center"
+                    android:layout_marginTop="1dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/description_textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="145dp"
+                        android:layout_gravity="bottom|center"
+                        android:gravity="center"
+                        android:paddingTop="3dp"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:textColor="#000000"
+                        android:textSize="15dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+
+                        android:id="@+id/tv_fullstory_unfolded_link"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="20dp"
+
+
+                        android:layout_above="@+id/description_textview"
+
+                        android:layout_alignParentRight="true"
+
+
+                        android:lines="1"
+
+                        android:text="Read full story"
+
+                        android:textColor="#00ffffff"
+
+                        android:textSize="16sp" />
+
+                    <TextView
+
+                        android:id="@+id/tv_fullstory_unfolded"
+
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="0dp"
+
+                        android:layout_below="@+id/tv_fullstory_unfolded_link"
+
+                        android:text="Read full story"
+
+                        android:textColor="#000000"
+
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/cell_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/yellow">
+
+                <TextView
+                    android:id="@+id/title_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="5dp"
+                    android:text=" "
+                    android:textColor="#000000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/text_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="right"
+
+                    android:text=" " />
+
+
+            </FrameLayout>
+
+        </com.ramotion.foldingcell.FoldingCell>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
